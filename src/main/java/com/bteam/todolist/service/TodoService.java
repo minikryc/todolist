@@ -3,11 +3,12 @@ package com.bteam.todolist.service;
 import com.bteam.todolist.model.Todo;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface TodoService {
     List<Todo> getAllTodos();
 
-    Todo getTodoById(Long id);
+    Optional<Todo> getTodoById(Long id);
 
     void addTodo(Todo todo);
 
